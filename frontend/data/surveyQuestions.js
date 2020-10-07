@@ -5,14 +5,21 @@ export const surveyQuestions = {
         question: "Pick a starting point 👇",
         choices: [
             {
-                content: "Interested in learning more about entrepreneurship",
+                content: "I'm interested in learning more about entrepreneurship.",
                 segue: "question",
                 leadsTo: "2A"
             },
             {
-                content: "Current founder or validated idea",
+                content: "I'm a current founder or have a validated idea.",
                 segue: "question",
                 leadsTo: "2B"
+            }
+        ],
+        explanations: [
+            {
+                title: "What is a VC?",
+                body: "Lorem ipsum dolor sit anem...",
+                link: "https://google.com"
             }
         ]
     },
@@ -71,7 +78,7 @@ export const surveyQuestions = {
             {
                 content: "Yes",
                 segue: "resource",
-                leadsTo: ["conferencesAndTrips"]
+                leadsTo: ["conferencesAndTrips", "startupInternships"]
             },
             {
                 content: "No",

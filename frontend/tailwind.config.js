@@ -14,6 +14,11 @@ module.exports = {
       },
     },
   },
-  variants: {},
+  variants: {
+    opacity: ({ before }) => before(['group-hover'])
+  },
   plugins: [],
+  experimental: {
+    uniformColorPalette: true,
+  }
 }
