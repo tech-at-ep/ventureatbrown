@@ -1,4 +1,6 @@
 export const surveyQuestions = {
+    // segue : the type/displayMode (resource or question) that follows a choice
+    // leadsTo : the state that follows a choice
     "1A": {
         question: "Pick a starting point 👇",
         choices: [

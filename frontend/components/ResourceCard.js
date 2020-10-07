@@ -10,12 +10,11 @@ export default function ({item, onResetSurvey}) {
 
     return <div>
         <h1 className="text-2xl font-bold">{resource.title}</h1>
-        <ul>
-            {resource.resources.map((item, index) => <li key={`resourceItem_${index}`}>
-                <h2>{item.name}</h2>
-                <a href={item.url}>{item.url}</a>
-            </li>)}
-        </ul>
+        <div class="divide-y-2 divide-red-500 divide-dashed">
+            {resource.resources.map((item, index) => <div key={`resourceItem_${index}`}>
+                <a href={item.url}><span class="transition duration-500 ease-in-out bg-transparent hover:bg-yellow-300">{item.name}</span></a>
+            </div>)}
+        </div>
         <button onClick={onResetSurvey} className="text-blue-400 mt-4">Start over</button>
     </div>
 }
