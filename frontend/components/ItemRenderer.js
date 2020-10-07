@@ -18,13 +18,22 @@ export default function () {
         }
     }
 
+    function navigateBackwards() {
+        setCurrentItem(item.derivesFrom)
+    }
+
+    function resetSurvey() {
+        setCurrentItem("1A")
+        setDisplayMode("question")
+    }
+
     if (displayMode === "question") {
         // Renderer for displaying a question
-        return <QuestionCard item={item} onNavigateForward={navigateForward} onBack={() => setCurrentItem(item.derivesFrom)}/>
+        return <QuestionCard item={item} onNavigateForward={navigateForward} onBack={navigateBackwards}/>
     } else {
         // Renderer for displaying resources
         return <div>
-            {currentItem.map((item, index) => <ResourceCard item={item} key={`resourceCard_${index}`}/>)}
+            {currentItem.map((item, index) => <ResourceCard item={item} key={`resourceCard_${index}`} onResetSurvey={resetSurvey}/>)}
         </div>
     }
 
