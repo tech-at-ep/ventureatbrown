@@ -9,7 +9,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Set up the development enviroment
 
-A step by step series of examples that tell you how to get a development env running
+Make sure you have a code editor like [VSCode](https://code.visualstudio.com/) or [WebStorm](https://www.jetbrains.com/webstorm/) and [Node.js](https://nodejs.org/en/) installed.
 
 Clone the repo
 
@@ -37,6 +37,6 @@ This site can be deployed anywhere that supports Node.js. We find it easiest to 
 
 ## Built With
 
-* [Next.js](https://nextjs.org/) - The web framework used
-* [Tailwind CSS](https://tailwindcss.com/) - Dependency Management
+* [Next.js](https://nextjs.org/) - The React-based web framework used
+* [Tailwind CSS](https://tailwindcss.com/) - Styling
 * Love ❤️
