@@ -28,6 +28,7 @@ yarn install
 
 Run the local develoment server and view the site at http://localhost:3000/
 ```
+npm dev
 yarn dev
 ```
 
