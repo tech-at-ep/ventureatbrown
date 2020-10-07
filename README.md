@@ -1,6 +1,6 @@
 # Venture @ Brown
 
-A website to guide Brown and RISD students towards resources best suited to their goals.
+An interactive guide to help Brown and RISD navigate the entrepreneurial resources on College Hill.
 
 ## Getting Started
 
@@ -20,7 +20,7 @@ git clone https://github.com/aaronwangj/ventureatbrown.git
 Navigate into the directory you just cloned and install dependencies.
 
 ```
-cd ventureatbrown
+cd ventureatbrown/frontend
 
 npm install
 yarn install
