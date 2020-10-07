@@ -1,9 +1,11 @@
-import Head from 'next/head'
+import ItemRenderer from "../components/ItemRenderer";
 
 export default function Home() {
-  return (
-   <div className="h-screen flex justify-center items-center">
-     <h1 className="text-3xl font-medium">Welcome to Ventures@Brown!</h1>
-   </div>
-  )
+
+
+    return (
+        <div className="h-screen flex justify-center items-center">
+            <ItemRenderer/>
+        </div>
+    )
 }
