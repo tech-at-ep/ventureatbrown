@@ -1,5 +1,3 @@
-import {resourceTrees} from "../data/resourceTrees";
-
 export default function ({item, onNavigateForward, onBack}) {
 
     return <div>
