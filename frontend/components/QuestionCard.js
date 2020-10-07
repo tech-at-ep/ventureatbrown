@@ -1,6 +1,6 @@
 import {resourceTrees} from "../data/resourceTrees";
 
-export default function ({item, onNavigateForward}) {
+export default function ({item, onNavigateForward, onBack}) {
 
     return <div>
         <p className="text-xl font-medium text-center">{item.question}</p>
@@ -9,5 +9,7 @@ export default function ({item, onNavigateForward}) {
                 <button className="p-1 px-3 border border-gray-300 rounded-full text-sm block"
                         onClick={() => onNavigateForward(choice)}>{choice.content}</button>)}
         </div>
+        {item.question !== "Pick a starting point 👇" && <button onClick={onBack}>← Go back</button>}
+
     </div>
 }

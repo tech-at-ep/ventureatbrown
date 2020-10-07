@@ -20,7 +20,7 @@ export default function () {
 
     if (displayMode === "question") {
         // Renderer for displaying a question
-        return <QuestionCard item={item} onNavigateForward={navigateForward}/>
+        return <QuestionCard item={item} onNavigateForward={navigateForward} onBack={() => setCurrentItem(item.derivesFrom)}/>
     } else {
         // Renderer for displaying resources
         return <div>

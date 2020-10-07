@@ -16,6 +16,7 @@ export const surveyQuestions = {
     },
     "2A": {
         question: "Do you have an idea?",
+        derivesFrom: "1A",
         choices: [
             {
                 content: "Sort of, still working on it",
@@ -31,6 +32,7 @@ export const surveyQuestions = {
     },
     "2B": {
         question: "Are you looking to raise a round?",
+        derivesFrom: "1A",
         choices: [
             {
                 content: "No",
@@ -46,6 +48,7 @@ export const surveyQuestions = {
     },
     "3A": {
         question: "Do you want to join a club?",
+        derivesFrom: "2A",
         choices: [
             {
                 content: "Yes",
@@ -61,6 +64,7 @@ export const surveyQuestions = {
     },
     "3B": {
         question: "Interested in networking?",
+        derivesFrom: "2A",
         choices: [
             {
                 content: "Yes",
@@ -76,6 +80,7 @@ export const surveyQuestions = {
     },
     "4A": {
         question: "Do you want to join a VC?",
+        derivesFrom: "3A",
         choices: [
             {
                 content: "Yes",
