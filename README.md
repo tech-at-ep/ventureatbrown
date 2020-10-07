@@ -37,6 +37,6 @@ This site can be deployed anywhere that supports Node.js. We find it easiest to 
 
 ## Built With
 
-* [Next.js](https://nextjs.org/) - The web framework used
-* [Tailwind CSS](https://tailwindcss.com/) - Dependency Management
+* [Next.js](https://nextjs.org/) - The React-based web framework used
+* [Tailwind CSS](https://tailwindcss.com/) - Styling
 * Love ❤️
