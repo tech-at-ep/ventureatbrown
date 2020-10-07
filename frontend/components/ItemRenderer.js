@@ -33,7 +33,8 @@ export default function () {
     } else {
         // Renderer for displaying resources
         return <div>
-            {currentItem.map((item, index) => <ResourceCard item={item} key={`resourceCard_${index}`} onResetSurvey={resetSurvey}/>)}
+            {currentItem.map((item, index) => <ResourceCard item={item} key={`resourceCard_${index}`}/>)}
+            <button onClick={resetSurvey} className="text-blue-400 mt-4">Start over</button>
         </div>
     }
 
