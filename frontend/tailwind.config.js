@@ -11,7 +11,7 @@ module.exports = {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
         display: ['sofia-pro', ...defaultTheme.fontFamily.sans],
-      },
+      }
     },
   },
   variants: {
@@ -19,6 +19,7 @@ module.exports = {
   },
   plugins: [],
   experimental: {
+    applyComplexClasses: true,
     uniformColorPalette: true,
   }
 }

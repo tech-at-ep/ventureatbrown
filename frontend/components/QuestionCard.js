@@ -4,35 +4,22 @@ export default function ({item, onNavigateForward, onBack}) {
 
     const isFirstQuestion = item.question === "Pick a starting point 👇"
 
-    return <div className="font-display">
-        <div className="text-5xl font-bold text-gray-900 block w-auto ">{item.question}</div>
-        <div className="mt-4 w-screen">
-            {item.choices.map(choice =><div className="group max-w-2xl">
-                    <button className=" hover:text-red-700 focus:underline p-3
-                   bg-gradient-to-r  hover:from-red-50
-                    -ml-3 text-gray-800 rounded-lg text-xl block w-full text-left flex justify-between items-center"
-                            onClick={() => onNavigateForward(choice)}>
+    return <div className="font-display max-w-xl">
+        <img src="https://via.placeholder.com/728x350"/>
+        <div className="mt-4">
+            <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center">{item.question}</h1>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-2">
 
-                        <span>
-                            {choice.content}
-                        </span>
+                {item.choices.map(choice => <button className="surveyButton" onClick={() => onNavigateForward(choice)}>{choice.content}</button>)}
 
-                            <div className="-rotate-90 transform group-hover:opacity-100 opacity-0 transition-opacity duration-300">
-                                <svg className="animate-bounce w-6 h-6 text-red-700" fill="none" strokeLinecap="round"
-                                     strokeLinejoin="round" strokeWidth="2.5" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
-                                </svg>
-                            </div>
+            </div>
 
-
-                    </button>
-                </div>
-                )}
         </div>
+
        <button onClick={onBack}
-               className={`font-bold text-red-600 mt-8 hover:text-red-500 focus:text-red-500 focus:underline 
+               className={`font-bold text-red-600 mt-8 text-lg hover:text-red-500 focus:text-red-500 focus:underline 
                ${isFirstQuestion ? "invisible" : "visible"}`} disabled={isFirstQuestion}>
-            ← Go back</button>
+            ← BACK</button>
 
             {/*<QuestionExplainationCard item={item}/>*/}
 
