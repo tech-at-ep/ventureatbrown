@@ -1,7 +1,7 @@
 import {useState} from "react";
 import {surveyQuestions} from "../data/surveyQuestions";
-import {resourceTrees} from "../data/resourceTrees";
 import ResourceCard from "./ResourceCard";
+import QuestionCard from "./QuestionCard";
 
 export default function () {
     const [displayMode, setDisplayMode] = useState("question")
@@ -20,14 +20,7 @@ export default function () {
 
     if (displayMode === "question") {
         // Renderer for displaying a question
-        return <div>
-            <p className="text-xl font-medium text-center">{item.question}</p>
-            <div className="md:space-x-4 mt-4 flex-row md:flex justify-center space-y-4 md:space-y-0">
-                {item.choices.map(choice =>
-                    <button className="p-1 px-3 border border-gray-300 rounded-full text-sm block"
-                            onClick={() => navigateForward(choice)}>{choice.content}</button>)}
-            </div>
-        </div>
+        return <QuestionCard item={item} onNavigateForward={navigateForward}/>
     } else {
         // Renderer for displaying resources
         return <div>
