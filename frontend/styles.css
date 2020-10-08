@@ -4,5 +4,10 @@
 button:focus {
     @apply outline-none
 }
+
+.surveyButton {
+    @apply p-3 rounded-lg hover:text-red-700 hover:bg-red-50 transition-all duration-300 text-xl text-gray-600
+
+}
 /* purgecss end ignore */
 @tailwind  utilities;

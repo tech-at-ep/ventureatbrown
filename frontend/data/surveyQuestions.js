@@ -5,7 +5,7 @@ export const surveyQuestions = {
         question: "Pick a starting point 👇",
         choices: [
             {
-                content: "I'm interested in learning more about entrepreneurship.",
+                content: "I want to learn more about entrepreneurship.",
                 segue: "question",
                 leadsTo: "2A"
             },
