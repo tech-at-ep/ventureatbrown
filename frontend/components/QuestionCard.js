@@ -4,7 +4,7 @@ import {motion, AnimatePresence} from "framer-motion"
 
 export default function ({item, onNavigateForward, onBack}) {
 
-    const isFirstQuestion = item.question === "Pick a starting point 👇"
+    const isFirstQuestion = (item.question === "Pick a starting point 👇")
 
 
     return <AnimatePresence>
