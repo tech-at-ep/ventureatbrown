@@ -15,6 +15,5 @@ export default function ({item, onResetSurvey}) {
                 <a href={item.url}><span class="transition duration-500 ease-in-out bg-transparent hover:bg-yellow-300">{item.name}</span></a>
             </div>)}
         </div>
-        <button onClick={onResetSurvey} className="text-blue-400 mt-4">Start over</button>
     </div>
 }

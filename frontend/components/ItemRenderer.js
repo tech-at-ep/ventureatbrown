@@ -2,6 +2,7 @@ import {useState} from "react";
 import {surveyQuestions} from "../data/surveyQuestions";
 import ResourceCard from "./ResourceCard";
 import QuestionCard from "./QuestionCard";
+import {AnimatePresence} from "framer-motion";
 
 export default function () {
     const [displayMode, setDisplayMode] = useState("question")
@@ -29,7 +30,10 @@ export default function () {
 
     if (displayMode === "question") {
         // Renderer for displaying a question
-        return <QuestionCard item={item} onNavigateForward={navigateForward} onBack={navigateBackwards}/>
+        return <AnimatePresence>
+            <QuestionCard item={item} onNavigateForward={navigateForward} onBack={navigateBackwards}/>
+
+        </AnimatePresence>
     } else {
         // Renderer for displaying resources
         return <div>
