@@ -51,47 +51,5 @@ export const resourceTrees = {
             }
             // ...
         ]
-    },
-    studentVcFellowship: {
-        title: "Student VC Fellowship",
-        resources: [
-            {
-                name: "Dorm Room Fund Investor Partner",
-                url: "https://join.dormroomfund.com/",
-                image: "https://join.dormroomfund.com/groupshot.JPG"
-            },
-            {
-                name: "Unshackled Fellowships",
-                url: "https://medium.com/unshackled-ventures/launching-our-university-fellowship-3-0-3a975c7c8e0e",
-                image: "https://miro.medium.com/max/1400/1*O7I1b8bR1MG5uhapcwvXqg.png"
-            }
-            {
-                name: "Blueprint Investor Track",
-                url: "https://blueprint.dormroomfund.com/",
-                image: "https://images.typeform.com/images/Xvh3BHszwvxH/image/default"
-            },
-            {
-                name: ".406 Venture Fellow",
-                url: "https://www.406ventures.com/about",
-                image: "https://res-1.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco/v1435310035/vmm6ugjlhyps9yhu3ufi.png"
-            },
-            {
-                name: "Rough Draft Fellowship",
-                url: "https://medium.com/rough-draft-ventures/join-the-rough-draft-ventures-team-83fb45e6415b",
-                image: "https://entrepreneurship.brown.edu/wp-content/uploads/2018/10/rough-draft-ventures-e1539801834693.jpg"
-            },
-            {
-                name: "Contrary Partner",
-                url: "https://contrarycap.com/join",
-                image: "https://global-uploads.webflow.com/5edc35fae93ebb8456425f57/5edd3639e5cf1e9d5b597359_f39hub76mlsoh4pqnxgx.png"
-            },
-            {
-                name: "Van Wickle Ventures",
-                url: "https://www.vanwickleventures.com/",
-                image: "https://images.squarespace-cdn.com/content/v1/5caa50d0af4683c75a73decb/1556564892816-7PIBFHDPYNI1M8LQ9XEK/ke17ZwdGBToddI8pDm48kGfiFqkITS6axXxhYYUCnlRZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpxQ1ibo-zdhORxWnJtmNCajDe36aQmu-4Z4SFOss0oowgxUaachD66r8Ra2gwuBSqM/unnamed-1.png"
-            }
-            // ...
-        ]
     }
-    // ...
 }
