@@ -1,7 +1,5 @@
 import {motion, AnimatePresence} from "framer-motion"
 
-
-
 export default function ({item, onNavigateForward, onBack}) {
 
     const isFirstQuestion = (item.question === "Pick a starting point 👇")
@@ -20,12 +18,9 @@ export default function ({item, onNavigateForward, onBack}) {
                 <div className="mt-4">
                     <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center">{item.question}</h1>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-2" layout>
-
                         {item.choices.map(choice => <button className="surveyButton"
                                                             onClick={() => onNavigateForward(choice)}>{choice.content}</button>)}
-
                     </div>
-
                 </div>
 
                 <button onClick={onBack}
