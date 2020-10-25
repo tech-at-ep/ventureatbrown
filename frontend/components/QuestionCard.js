@@ -1,4 +1,5 @@
 import {motion, AnimatePresence} from "framer-motion"
+import PlaceholderBear from "./placeholderbear";
 
 export default function ({item, onNavigateForward, onBack}) {
 
@@ -14,7 +15,7 @@ export default function ({item, onNavigateForward, onBack}) {
                         exit={{ y: 100, opacity: 0, transition: {
                                 ease: "easeOut", duration: 0.75
                             } }}>
-                <img src="https://via.placeholder.com/728x350" alt=""/>
+                <img src="/placeholder_bear.svg" alt="" />
                 <div className="mt-4">
                     <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center">{item.question}</h1>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-2" layout>
