@@ -44,12 +44,12 @@ const SurveyWindow = () => {
                 addEndListener={(node, done) => node.addEventListener("transitionend", done, false)}
                 classNames='fade'
             >
-                <div className={`h-screen flex ${displayMode === "question" ? "items-center" : "items-start"} px-6`}>
+                <div className={`h-screen flex ${displayMode === "question" ? "items-center" : "items-start"} px-4`}>
                     {displayMode === "question" ? <div className="w-full mx-auto max-w-7xl text-center">
-                        <p className="text-2xl md:text-4xl font-bold font-display">
+                        <h1 className="text-2xl md:text-4xl font-bold font-display">
                             {item ? item.question : null}
-                        </p>
-                        <div className="md:space-x-4 space-y-2 md:space-y-0 mt-4">
+                        </h1>
+                        <div className="md:space-x-4 space-y-4 md:space-y-0 mt-6">
                             {item.choices.map(choice => <button
                                 className="text-lg py-1 px-4 font-medium text-gray-800 md:border border-gray-200 md:shadow-sm rounded-full
                                 transition-all duration-200
@@ -62,8 +62,8 @@ const SurveyWindow = () => {
                                 {choice.content}
                             </button>)}
                         </div>
-                    </div> : <div className="w-full mx-auto max-w-4xl text-center my-24">
-                        <div className="text-left">
+                    </div> : <div className="w-full mx-auto max-w-4xl text-center my-16 md:my-32">
+                        <div className="text-left mb-2">
                             <button onClick={resetSurvey} className="uppercase text-red-600 font-bold font-display">&larr; Start Over</button>
                         </div>
                         <h1 className="text-2xl md:text-4xl font-bold mb-6 font-display">Here are the resources we think will be
@@ -71,10 +71,10 @@ const SurveyWindow = () => {
                         <ul className="divide-y w-full">
                             {shuffled.map(item => <li>
                                 <a className="group block py-4 w-full text-left" href={item.url}>
-                                    <h2 className="text-xl font-semibold text-gray-800 group-hover:text-red-600 group-focus:text-red-600 transition-all duration-200">
+                                    <h2 className="md:text-xl font-semibold text-gray-800 group-hover:text-red-600 group-focus:text-red-600 transition-all duration-200">
                                         {item.name} <span className="opacity-0 group-hover:opacity-100 group-focus:opacity-100">&rarr;</span>
                                     </h2>
-                                    <p className="text-lg text-gray-600 group-hover:text-red-500 transition-all duration-200">
+                                    <p className="text-sm md:text-lg text-gray-600 group-hover:text-red-500 transition-all duration-200">
                                         {item.description ?? "I gave it a cold? I gave it a virus. A computer virus. So you two dig up, dig up dinosaurs?"}
                                     </p>
                                 </a>
