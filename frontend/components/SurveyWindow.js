@@ -49,9 +49,9 @@ const SurveyWindow = () => {
                         <p className="text-4xl font-bold font-display">
                             {item ? item.question : null}
                         </p>
-                        <div className="space-x-4 mt-4">
+                        <div className="md:space-x-4 space-y-4 md:space-y-0 mt-4">
                             {item.choices.map(choice => <button
-                                className="text-lg py-1 px-4 border border-gray-200 shadow-sm rounded-full
+                                className="text-lg py-1 px-4 font-medium text-gray-800 md:border border-gray-200 md:shadow-sm rounded-full
                                 transition-all duration-200
                                 hover:bg-red-50 hover:text-red-600 hover:border-red-200
                                 focus:bg-red-50 focus:text-red-600 focus:border-red-200
