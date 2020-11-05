@@ -38,7 +38,7 @@ const Survey = () => {
     }, [])
 
     return (
-        <div className="h-screen">
+        <div className="max-h-screen">
             <SwitchTransition>
                 <CSSTransition
                     key={item.id}
