@@ -46,10 +46,10 @@ const SurveyWindow = () => {
             >
                 <div className={`h-screen flex ${displayMode === "question" ? "items-center" : "items-start"} px-6`}>
                     {displayMode === "question" ? <div className="w-full mx-auto max-w-7xl text-center">
-                        <p className="text-4xl font-bold font-display">
+                        <p className="text-2xl md:text-4xl font-bold font-display">
                             {item ? item.question : null}
                         </p>
-                        <div className="md:space-x-4 space-y-4 md:space-y-0 mt-4">
+                        <div className="md:space-x-4 space-y-2 md:space-y-0 mt-4">
                             {item.choices.map(choice => <button
                                 className="text-lg py-1 px-4 font-medium text-gray-800 md:border border-gray-200 md:shadow-sm rounded-full
                                 transition-all duration-200
@@ -66,7 +66,7 @@ const SurveyWindow = () => {
                         <div className="text-left">
                             <button onClick={resetSurvey} className="uppercase text-red-600 font-bold font-display">&larr; Start Over</button>
                         </div>
-                        <h1 className="text-4xl font-bold mb-6 font-display">Here are the resources we think will be
+                        <h1 className="text-2xl md:text-4xl font-bold mb-6 font-display">Here are the resources we think will be
                             most helpful</h1>
                         <ul className="divide-y w-full">
                             {shuffled.map(item => <li>
