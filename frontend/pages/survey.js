@@ -1,10 +1,9 @@
-import ItemRenderer from "../components/ItemRenderer";
-import Landing from "../components/Landing";
+import SurveyWindow from "../components/SurveyWindow";
 
 export default function Survey() {
     return (
         <div className="flex justify-center items-center">
-                <ItemRenderer/>
+            <SurveyWindow/>
         </div>
     )
 }

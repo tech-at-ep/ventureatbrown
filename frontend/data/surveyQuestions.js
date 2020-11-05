@@ -1,8 +1,14 @@
 export const surveyQuestions = {
     // segue : the type/displayMode (resource or question) that follows a choice
     // leadsTo : the state that follows a choice
+    "INTRO": {
+        id: 99,
+        question: "Hello there.",
+        choices: []
+    },
     "1A": {
-        question: "Pick a starting point 👇",
+        id: 1,
+        question: "What would you like to do?",
         choices: [
             {
                 content: "I want to learn more about entrepreneurship.",
@@ -24,6 +30,7 @@ export const surveyQuestions = {
         ]
     },
     "2A": {
+        id: 2,
         question: "Do you have an idea?",
         derivesFrom: "1A",
         choices: [
@@ -40,6 +47,7 @@ export const surveyQuestions = {
         ]
     },
     "2B": {
+        id: 3,
         question: "Are you looking to raise a round?",
         derivesFrom: "1A",
         choices: [
@@ -56,6 +64,7 @@ export const surveyQuestions = {
         ]
     },
     "3A": {
+        id: 4,
         question: "Do you want to join a club?",
         derivesFrom: "2A",
         choices: [
@@ -72,6 +81,7 @@ export const surveyQuestions = {
         ]
     },
     "3B": {
+        id: 5,
         question: "Interested in networking?",
         derivesFrom: "2A",
         choices: [
@@ -88,6 +98,7 @@ export const surveyQuestions = {
         ]
     },
     "4A": {
+        id: 6,
         question: "Do you want to join a VC?",
         derivesFrom: "3A",
         choices: [

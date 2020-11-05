@@ -15,7 +15,8 @@ module.exports = {
     },
   },
   variants: {
-    opacity: ({ before }) => before(['group-hover'])
+    opacity: ['responsive', 'hover', 'focus', 'group-hover', 'group-focus'],
+    textColor: ['responsive', 'hover', 'focus', 'group-hover', 'group-focus']
   },
   plugins: [],
   experimental: {
