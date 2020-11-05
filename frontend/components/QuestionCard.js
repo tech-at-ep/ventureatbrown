@@ -6,8 +6,8 @@ export default function ({item, onNavigateForward, onBack}) {
     const isFirstQuestion = (item.question === "Pick a starting point 👇")
 
 
-    return <AnimatePresence>
-        <div>
+    return (<AnimatePresence className="h-screen flex justify-center items-center">
+        <div className="h-screen flex justify-center items-center">
             <motion.div key={item.question} className="font-display max-w-xl" initial={{ y: -25, opacity: 0 }}
                         animate={{ y: 0, opacity: 1, transition: {
                                 ease: "easeOut", duration: 0.75
@@ -15,7 +15,7 @@ export default function ({item, onNavigateForward, onBack}) {
                         exit={{ y: 100, opacity: 0, transition: {
                                 ease: "easeOut", duration: 0.75
                             } }}>
-                <img src="/placeholder_bear.svg" alt="" />
+                <img className="m-auto" src="/placeholder_bear.svg" alt="" />
                 <div className="mt-4">
                     <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center">{item.question}</h1>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-2" layout>
@@ -35,5 +35,5 @@ export default function ({item, onNavigateForward, onBack}) {
             </motion.div>
         </div>
 
-    </AnimatePresence>
+    </AnimatePresence>);
 }

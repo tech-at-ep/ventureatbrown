@@ -1,12 +1,12 @@
-import ItemRenderer from "../components/ItemRenderer";
+import Landing from "../components/Landing";
 
 export default function Home() {
 
 
     return (
-        <div className="h-screen flex justify-center items-center">
-            <div className="mx-4 md:px-24">
-                <ItemRenderer/>
+        <div className="h-screen flex mx-7 px-6 pt-10 mt-10 sm:pt-1 sm:justify-center sm:items-center">
+            <div>
+                <Landing/>
             </div>
         </div>
     )
