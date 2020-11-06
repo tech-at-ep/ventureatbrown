@@ -3,7 +3,7 @@ export const surveyQuestions = {
     // leadsTo : the state that follows a choice
     "INTRO": {
         id: 99,
-        question: "Hello there.",
+        question: "Hello there 👋",
         choices: []
     },
     "1A": {

@@ -5,16 +5,19 @@ export const resourceTrees = {
         "resources":[
             {
                 "name":"Brown Entrepreneurship Program",
+                "description": "Brown Entrepreneurship Program (Brown EP) is the main student entrepreneurship initiative at Brown University.",
                 "url":"https://www.brownentrepreneurship.com/",
                 "image":"/resource_images/brown_ep.png"
             },
             {
                 "name":"Brown RISD Innovation Community",
                 "url":"https://brownrisdinnovation.com/",
+                "description": "With interests ranging from entrepreneurship and history, to design and technology, BRIC brings together students from Brown and RISD.",
                 "image":"https://brownrisdinnovation.com/static/media/landing.f241e293.png"
             },
             {
                 "name":"Design@Brown",
+                "description": "Design@Brown aims to bring design education to the Brown community and curriculum.",
                 "url":"https://www.designatbrown.com/",
                 "image":"https://www.brown.edu/research/misc/favicon.ico"
             },

@@ -16,7 +16,7 @@ export default function () {
 
                 <Link href="/survey">
                     <a className="bg-red-600 block md:inline-block rounded-lg py-3 font-display transition-all duration-200 font-medium hover:bg-red-400 focus:bg-red-400 px-12 mt-8 text-white">
-                        Begin Survey &rarr;
+                        Let's get started &rarr;
                     </a>
                 </Link>
             </div>
