@@ -68,11 +68,13 @@ const Survey = () => {
                             </div>
                             <h1 className="text-2xl md:text-4xl font-bold mb-6 font-display">Here are the resources we think will be
                                 most helpful</h1>
-                            <ul className="divide-y w-full">
-                                {shuffled.map(item => <li>
-                                        <a className="group block py-4 w-full text-left" href={item.url}>
-                                            <h2 className="md:text-xl font-semibold text-gray-800 group-hover:text-red-600 group-focus:text-red-600 transition-all duration-200">
-                                                {item.name} <span className="opacity-0 group-hover:opacity-100 group-focus:opacity-100">&rarr;</span>
+                            <ul className="divide-y divide-gray-200 w-full">
+                                {shuffled.map(item => <li className="flex group justify-start items-center">
+                                    <img src={item.image}
+                                         className="w-12 h-12 rounded-lg object-cover border group-hover:border-red-300 group-focus:border-red-300 shadow-sm mr-4 transition-all duration-150"/>
+                                        <a className="block py-4 w-full text-left" href={item.url} target="_blank">
+                                            <h2 className="md:text-xl font-semibold text-gray-800 group-hover:text-red-600 group-focus:text-red-600 transition-all duration-150 inline-flex items-center">
+                                                {item.name}
                                             </h2>
                                             <p className="text-sm md:text-lg text-gray-600 group-hover:text-red-500 transition-all duration-200">
                                                 {item.description ?? "I gave it a cold? I gave it a virus. A computer virus. So you two dig up, dig up dinosaurs?"}
