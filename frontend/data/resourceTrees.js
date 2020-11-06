@@ -369,12 +369,12 @@ export const resourceTrees = {
             {
                 "name":"Explore Grant",
                 "url":"https://ufunds.brown.edu/apply/browse",
-                "image":"https://www.brown.edu/research/misc/favicon.ico"
+                "image":"/brown_logo.png"
             },
             {
                 "name":"Expand Grants",
                 "url":"https://ufunds.brown.edu/apply/browse",
-                "image":"https://www.brown.edu/research/misc/favicon.ico"
+                "image":"/brown_logo.png"
             },
             {
                 "name":"Maker Grant",
@@ -652,12 +652,12 @@ export const badResourceTrees = {
             {
                 "name": "Explore Grant",
                 "url": "https://ufunds.brown.edu/apply/browse",
-                "image": "https://www.brown.edu/research/misc/favicon.ico"
+                "image": "/brown_logo.png"
             },
             {
                 "name": "Expand Grants",
                 "url": "https://ufunds.brown.edu/apply/browse",
-                "image": "https://www.brown.edu/research/misc/favicon.ico"
+                "image": "/brown_logo.png"
             },
             {
                 "name": "Maker Grant",
