@@ -1,9 +1,10 @@
-import {motion} from "framer-motion";
 import Link from 'next/link';
+import Navbar from "./Navbar";
 
 export default function () {
+
     return <div className="font-display max-w-screen-sm">
-        <div className="absolute top-0 right-0 m-5 text-gray-400 hover:text-red-600"><Link href="/about"><a>About</a></Link></div>
+        <Navbar isLanding/>
         <img src="/placeholder_bear.svg" className="rounded-lg mb-6"/>
         <div className="text-center">
             <h1 className="text-3xl sm:text-5xl font-bold text-gray-900">Venture<span className="font-sans text-gray-400 font-light">@</span>Brown</h1>
