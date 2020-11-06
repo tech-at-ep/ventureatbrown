@@ -7,12 +7,6 @@ html, body {
     height:100%;
 }
 
-.app-container {
-    position:absolute;
-    overflow:hidden;
-    top:0;   left:0;
-    bottom:0; right:0;
-}
 
 button:focus {
     @apply outline-none
