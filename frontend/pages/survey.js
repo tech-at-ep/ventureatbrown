@@ -10,7 +10,7 @@ const Survey = () => {
     const [currentItem, setCurrentItem] = useState("INTRO")
     const item = surveyQuestions[currentItem] ?? {id: 10}
     const resource = displayMode === "resource" ? currentItem.map(resource => resourceTrees[resource].resources).flat() : null
-    const shuffled = resource && _.shuffle(resource)
+    const shuffled = resource && resource.sort((a, b) => (a.name > b.name) ? 1 : -1)
 
     function navigateForward(choice) {
         if (choice.segue === "resource") {
