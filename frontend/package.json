@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^3.0.0",
+    "firebase": "^8.0.1",
     "framer-motion": "^2.7.8",
     "lodash": "^4.17.20",
     "next": "9.5.3",
