@@ -15,7 +15,7 @@ export default function () {
             <div className="mt-4">
 
                 <Link href="/survey">
-                    <a type="button" className="bg-red-600 rounded-lg py-3 font-display transition-all duration-200 font-medium hover:bg-red-400 focus:bg-red-400 px-12 mt-8 text-white">
+                    <a className="bg-red-600 block rounded-lg py-3 font-display transition-all duration-200 font-medium hover:bg-red-400 focus:bg-red-400 px-12 mt-8 text-white">
                         Begin Survey &rarr;
                     </a>
                 </Link>
