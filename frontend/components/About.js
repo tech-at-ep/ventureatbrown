@@ -12,7 +12,7 @@ export default function(){
         <div class="flex flex-col px-4">
 
             <div class="flex flex-col text-black py-2 m-2">
-                <div className="flex-shrink-0"><span className="flex-shrink-0 font-semibold text-xl">First Last</span></div>
+                <div className="flex-shrink-0"><span className="flex-shrink-0 font-semibold text-xl">Nathan Luu</span></div>
                 <div className="flex flex-row">
                     <div className="flex-shrink-0 p-3"><img className="inline-block" src="https://via.placeholder.com/150x180"></img></div>
                     <div className="text-justify">
@@ -25,7 +25,7 @@ export default function(){
             </div>
 
             <div class="flex flex-col text-black py-2 m-2">
-                <div className="flex-shrink-0"><span className="flex-shrink-0 font-semibold text-xl">First Last</span></div>
+                <div className="flex-shrink-0"><span className="flex-shrink-0 font-semibold text-xl">Jasper Chen</span></div>
                 <div className="flex flex-row">
                     <div className="flex-shrink-0 p-3"><img className="inline-block" src="https://via.placeholder.com/150x180"></img></div>
                     <div className="text-justify">
@@ -38,7 +38,7 @@ export default function(){
             </div>
 
             <div class="flex flex-col text-black py-2 m-2">
-                <div className="flex-shrink-0"><span className="flex-shrink-0 font-semibold text-xl">First Last</span></div>
+                <div className="flex-shrink-0"><span className="flex-shrink-0 font-semibold text-xl">Abby Powell</span></div>
                 <div className="flex flex-row">
                     <div className="flex-shrink-0 p-3"><img className="inline-block" src="https://via.placeholder.com/150x180"></img></div>
                     <div className="text-justify">
@@ -51,8 +51,9 @@ export default function(){
             </div>
 
             <div class="flex flex-col text-black py-2 m-2">
-                <div className="flex-shrink-0"><span className="flex-shrink-0 font-semibold text-xl">Learn More About Brown EP:</span></div>
+                <div className="flex-shrink-0"><span className="flex-shrink-0 font-semibold text-xl">Aaron Wang</span></div>
                 <div className="flex flex-row">
+                    <div className="flex-shrink-0 p-3"><img className="inline-block" src="https://via.placeholder.com/150x180"></img></div>
                     <div className="text-justify">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -61,6 +62,7 @@ export default function(){
                     </div>
                 </div>
             </div>
+
             
         </div>
         <Link href="\">
