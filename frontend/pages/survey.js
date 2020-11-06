@@ -3,7 +3,6 @@ import {CSSTransition} from "react-transition-group";
 import {useEffect, useState} from "react";
 import {surveyQuestions} from "../data/surveyQuestions";
 import {resourceTrees} from "../data/resourceTrees";
-import _ from 'lodash';
 
 const Survey = () => {
     const [displayMode, setDisplayMode] = useState("question")

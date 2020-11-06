@@ -15,6 +15,7 @@ class MyDocument extends Document {
 
                     {/*Sophia web font*/}
                     <link rel="stylesheet" href="https://use.typekit.net/blg0zww.css"/>
+                    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 </Head>
                 <body>
                 <Main />
