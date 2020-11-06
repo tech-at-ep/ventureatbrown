@@ -3,18 +3,30 @@ import {CSSTransition} from "react-transition-group";
 import {useEffect, useState} from "react";
 import {surveyQuestions} from "../data/surveyQuestions";
 import {resourceTrees} from "../data/resourceTrees";
+import fb from "../lib/firebase-config";
 
 const Survey = () => {
     const [displayMode, setDisplayMode] = useState("question")
     const [currentItem, setCurrentItem] = useState("INTRO")
     const item = surveyQuestions[currentItem] ?? {id: 10}
     const resource = displayMode === "resource" ? currentItem.map(resource => resourceTrees[resource].resources).flat() : null
-    const shuffled = resource && resource.sort((a, b) => (a.name > b.name) ? 1 : -1)
+    const sorted = resource && resource.sort((a, b) => (a.name > b.name) ? 1 : -1)
+
+    const [sequence, setSequence] = useState([])
 
     function navigateForward(choice) {
+
+        const newSequence = [...sequence, {question: item.question, answer: choice.content}]
+        setSequence(newSequence)
+
         if (choice.segue === "resource") {
             setDisplayMode("resource")
             setCurrentItem(choice.leadsTo)
+
+            fb.firestore().collection('ventureAtBrown').doc('userSequences').collection(process.env.NODE_ENV).add({
+                completedAt: Date.now(),
+                sequence: newSequence
+            })
         } else {
             setDisplayMode("question")
             setCurrentItem(choice.leadsTo)
@@ -28,6 +40,7 @@ const Survey = () => {
     function resetSurvey() {
         setCurrentItem("1A")
         setDisplayMode("question")
+        setSequence([])
     }
 
     useEffect(() => {
@@ -69,7 +82,7 @@ const Survey = () => {
                             <h1 className="text-2xl md:text-4xl font-bold mb-6 font-display">Here are the resources we think will be
                                 most helpful</h1>
                             <ul className="divide-y divide-gray-200 w-full">
-                                {shuffled.map(item => <li className="flex group justify-start items-center">
+                                {sorted.map(item => <li className="flex group justify-start items-center">
                                     <img src={item.image}
                                          className="w-12 h-12 rounded-lg object-cover border group-hover:border-red-300 group-focus:border-red-300 shadow-sm mr-4 transition-all duration-150"/>
                                         <a className="block py-4 w-full text-left" href={item.url} target="_blank">

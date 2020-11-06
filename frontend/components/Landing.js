@@ -2,12 +2,7 @@ import {motion} from "framer-motion";
 import Link from 'next/link';
 
 export default function () {
-    return <motion.div className="font-display max-w-screen-sm" initial={{y: -25, opacity: 0}}
-                       animate={{
-                           y: 0, opacity: 1, transition: {
-                               ease: "easeOut", duration: 0.75
-                           }
-                       }}>
+    return <div className="font-display max-w-screen-sm">
         <div className="absolute top-0 right-0 m-5 text-gray-400 hover:text-red-600"><Link href="/about"><a>About</a></Link></div>
         <img src="/placeholder_bear.svg" className="rounded-lg mb-6"/>
         <div className="text-center">
@@ -21,5 +16,5 @@ export default function () {
                 </Link>
             </div>
         </div>
-    </motion.div>
+    </div>
 }
