@@ -41,5 +41,15 @@ button:focus {
 .fade-exit-active {
     transition: opacity 600ms, transform 600ms;
 }
+
+.red-link {
+    @apply text-red-600 font-bold font-display
+}
+.red-link:hover {
+    @apply text-red-500
+}
+.red-link:focus {
+    @apply text-red-500 underline
+}
 /* purgecss end ignore */
 @tailwind  utilities;

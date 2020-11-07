@@ -87,7 +87,7 @@ const Survey = () => {
                                 </div>
                             </div> : <div className="w-full mx-auto max-w-4xl text-center mt-24 mb-32 lg:my-32">
                                 <div className="text-left mb-2">
-                                    <button onClick={resetSurvey} className="uppercase text-red-600 font-bold font-display">&larr; Start Over</button>
+                                    <button onClick={resetSurvey} className="uppercase red-link">&larr; Start Over</button>
                                 </div>
                                 <h1 className="text-2xl lg:text-4xl font-bold mb-6 font-display">
                                     Based on your answers, these are the resources we think will be most helpful

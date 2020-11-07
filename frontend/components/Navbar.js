@@ -17,7 +17,7 @@ export default function Navbar({isLanding}) {
                 <a className={linkStyling}>Resources</a>
             </Link>
             {!isLanding && <Link href="/survey">
-                <a className="text-red-600 hover:text-red-500 focus:text-red-400 font-bold">Take the survey &rarr;</a>
+                <a className="red-link">Take the survey &rarr;</a>
             </Link>}
 
         </div>
