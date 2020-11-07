@@ -33,7 +33,7 @@ const Resources = () => {
                 {sorted.map(resTree => <a className="py-1 hover:bg-red-50 hover:border-red-300 hover:text-red-600
             focus:bg-red-50 focus:border-red-300 focus:text-red-600
             transition-all duration-200
-             px-2 text-sm md:text-base border rounded-full inline-block mb-2 mr-2"
+             px-2 text-sm text-gray-700 md:text-base border border-gray-200 shadow-sm rounded-full inline-block mb-2 mr-2"
                                           href={`#${resTree.id}`}>{resTree.title}</a>)}
             </section>
             {sorted.map(resourceTree => (<section key={resourceTree.id} id={resourceTree.id} className="mt-8">
