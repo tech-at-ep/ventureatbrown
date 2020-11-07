@@ -2,6 +2,7 @@ import fb from "../lib/firebase-config";
 import {useEffect, useState} from "react";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
+import Link from "next/link";
 
 const Resources = () => {
     const [isLoading, toggleLoading] = useState(true)
@@ -27,6 +28,10 @@ const Resources = () => {
         </Head>
         <div className="max-w-3xl mx-auto px-4 my-24">
             <Navbar/>
+            <Link href="/suggest">
+                <a className="red-link uppercase text-lg">Suggest &rarr;</a>
+            </Link>
+
             <h1 className="text-5xl font-bold text-gray-900 font-display">Resources</h1>
             <section className="my-6">
                 <h2 className="font-display text-2xl font-semibold mb-4 text-gray-800">Categories</h2>

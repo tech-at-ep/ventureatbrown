@@ -101,7 +101,7 @@ const Survey = () => {
                                                     {item.name}
                                                 </h2>
                                                 <p className="text-sm lg:text-lg text-gray-600 group-hover:text-red-500 transition-all duration-200">
-                                                    {item.description ?? "I gave it a cold? I gave it a virus. A computer virus. So you two dig up, dig up dinosaurs?"}
+                                                    {item.description}
                                                 </p>
                                             </a>
                                         </li>
