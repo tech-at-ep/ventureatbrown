@@ -1,5 +1,3 @@
-import fb from "../lib/firebase-config";
-import {useEffect, useState} from "react";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 

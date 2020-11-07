@@ -1,5 +1,4 @@
 import '../styles.css'
-import fb from "../lib/firebase-config";
 import Head from "next/head";
 
 
