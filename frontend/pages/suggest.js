@@ -8,7 +8,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 const Suggest = () => {
 
     const categories = ['Academics 📚',  'Conferences and Trips ✈️', 'Early Idea Competitions 💡', 'Early Stage Accelerators and Support 👟', 'Large Grants 🤑', 'Small Grants 💸', 'Startup Internships 💻', 'Student Groups 👩‍🎓', 'Student VC Fellowships 💰', 'Student VCs 💵', 'VC\'s 💵']
-    const inputStyle = "p-4 text-lg md:text-xl border rounded-lg focus:outline-none w-full"
+    const inputStyle = "p-4 text-lg md:text-xl border rounded-lg focus:outline-none w-full polyfill-button"
 
     const [isLoading, toggleLoading] = useState(false)
     const [submitted, toggleSubmitted] = useState(false)
