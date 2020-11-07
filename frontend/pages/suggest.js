@@ -37,7 +37,7 @@ const Suggest = () => {
         </Head>
         <div className="max-w-3xl mx-auto px-4 my-24">
             <Navbar/>
-            <h1 className="text-5xl font-bold text-gray-900 font-display">Suggest a resource</h1>
+            <h1 className="text-5xl font-bold text-gray-900 font-display leading-tight">Suggest a resource</h1>
 
             {submitted ? <section>
                 <section className="my-4">

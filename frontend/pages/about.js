@@ -53,7 +53,9 @@ const About = () => {
                 <h2 className="font-display text-2xl font-semibold mb-4 text-gray-800">Our Team</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     {team.map((person, index) => <div className="font-medium leading-tight" key={index}>
-                        <img className="h-56 w-full object-cover rounded-lg shadow-sm" src={person.image}/>
+                        <img className="h-56 w-full object-cover rounded-lg shadow-sm"
+                               alt=""
+                               src={person.image}/>
                         <h3 className="text-xl font-semibold text-gray-700 mt-4">{person.name}</h3>
                         <h4 className="text-lg text-gray-400">{person.role}</h4>
                         <div className="flex justify-start items-center space-x-4 mt-2 text-xl">

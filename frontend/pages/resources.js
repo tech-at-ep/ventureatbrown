@@ -29,7 +29,7 @@ const Resources = () => {
         <div className="max-w-3xl mx-auto px-4 my-24">
             <Navbar/>
             <Link href="/suggest">
-                <a className="red-link uppercase text-lg">Suggest &rarr;</a>
+                <a className="red-link uppercase text-lg">Suggest a resource</a>
             </Link>
 
             <h1 className="text-5xl font-bold text-gray-900 font-display">Resources</h1>
