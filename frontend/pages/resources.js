@@ -25,7 +25,7 @@ const Resources = () => {
         <Head>
             <title>Resources | Venture@Brown</title>
         </Head>
-        <div className="max-w-3xl mx-auto px-4 my-16 md:my-24">
+        <div className="max-w-3xl mx-auto px-4 my-24">
             <Navbar/>
             <h1 className="text-5xl font-bold text-gray-900 font-display">Resources</h1>
             <section className="my-6">

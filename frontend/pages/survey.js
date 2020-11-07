@@ -85,14 +85,15 @@ const Survey = () => {
                                         {choice.content}
                                     </button>)}
                                 </div>
-                            </div> : <div className="w-full mx-auto max-w-4xl text-center mt-16 mb-32 lg:my-32">
+                            </div> : <div className="w-full mx-auto max-w-4xl text-center mt-24 mb-32 lg:my-32">
                                 <div className="text-left mb-2">
                                     <button onClick={resetSurvey} className="uppercase text-red-600 font-bold font-display">&larr; Start Over</button>
                                 </div>
-                                <h1 className="text-2xl lg:text-4xl font-bold mb-6 font-display">Here are the resources we think will be
-                                    most helpful</h1>
+                                <h1 className="text-2xl lg:text-4xl font-bold mb-6 font-display">
+                                    Based on your answers, these are the resources we think will be most helpful
+                                </h1>
                                 <ul className="divide-y divide-gray-200 w-full">
-                                    {sorted.map(item => <li className="flex group justify-start items-center">
+                                    {sorted.map(item => <li className="flex group justify-start items-center" key={item.name}>
                                             <img src={item.image}
                                                  className="w-12 h-12 rounded-lg object-cover border group-hover:border-red-300 group-focus:border-red-300 shadow-sm mr-4 transition-all duration-150"/>
                                             <a className="block py-4 w-full text-left" href={item.url} target="_blank">
