@@ -25,12 +25,12 @@ const About = () => {
         github: "https://github.com/nthnluu",
         website: "https://nthnluu.com"
     }, {
-        name: "Aaron Wang '22",
+        name: "Aaron Wang '23",
         role: "Project Manager",
-        image: "https://images.unsplash.com/photo-1604589936806-ebace7c59ce5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2551&q=80",
-        linkedIn: "http://google.com",
-        github: "https://github.com/nthnluu",
-        website: "https://nthnluu.com"
+        image: "https://ventureatbrown.com/placeholder_bear.svg",
+        linkedIn: "https://linkedin.com/in/aaronjwang",
+        github: "https://github.com/aaronwangj",
+        website: "https://aaronjwang.com"
     }]
 
     const buttonStyle = "text-gray-400 hover:text-gray-300 focus:text-gray-200 transition-all duration-200"
