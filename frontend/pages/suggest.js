@@ -60,12 +60,12 @@ const Suggest = () => {
                     </p>
                 </section>
             <form className="w-full pt-4 space-y-4" onSubmit={submitSuggestion}>
-                <input placeholder="Name" id="name" className={inputStyle} required/>
+                <input placeholder="Resource name" id="name" className={inputStyle} required/>
                 <input placeholder="URL"  id="url" className={inputStyle} required/>
                 <select id="category" className={inputStyle} required>
                     {categories.map((category) => <option key={category} value={category}>{category}</option>)}
                 </select>
-                <textarea  id="desc" placeholder="Description" className={inputStyle} required/>
+                <textarea  id="desc" placeholder="Describe this resource..." className={inputStyle} required/>
                 <ReCAPTCHA
                     sitekey="6LeXKuAZAAAAAOX7TJcFaKuBy0ipIHsRlpmTagMZ"
                     onChange={() => toggleCapcha(true)}
