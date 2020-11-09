@@ -14,9 +14,9 @@ const About = () => {
         name: "Jasper Chen '24",
         role: "Frontend Designer/Developer",
         image: "https://images.unsplash.com/photo-1604599886859-7aa09b49f7dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80",
-        linkedIn: "http://google.com",
-        github: "https://github.com/nthnluu",
-        website: "https://nthnluu.com"
+        linkedIn: "https://www.linkedin.com/in/jasper-chen-1b8b98197",
+        github: "https://github.com/Jasch3n",
+        website: "https://jasch3n.github.io/mySite"
     }, {
         name: "Abby Powell '22",
         role: "Frontend Developer",
