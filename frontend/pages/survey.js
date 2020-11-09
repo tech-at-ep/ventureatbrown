@@ -48,7 +48,7 @@ const Survey = () => {
     useEffect(() => {
         setTimeout(() => {
             resetSurvey()
-        }, 1000)
+        }, 100)
     }, [])
 
     return (
