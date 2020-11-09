@@ -1,26 +1,26 @@
-import fb from "../lib/firebase-config";
-import {useEffect, useState} from "react";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Link from "next/link";
+import {useRouter} from "next/router";
+import {surveyQuestions} from "../data/surveyQuestions";
+import {resourceTrees} from "../data/resourceTrees";
 
 const Resources = () => {
-    const [isLoading, toggleLoading] = useState(true)
-    const [trees, setTrees] = useState({surveyQuestions: undefined, resources: undefined})
-
-    useEffect(() => {
-        fb.firestore().collection('ventureAtBrown').doc('trees').get()
-            .then(doc => {
-                setTrees(doc.data())
-                toggleLoading(false)
-            })
-    }, [])
-
-    if (isLoading) {
-        return null
-    }
-
+    const trees = {surveyQuestions: surveyQuestions, resources: resourceTrees}
+    const router = useRouter()
     const sorted = Object.values(trees.resources).sort((a, b) => (a.title > b.title) ? 1 : -1)
+
+
+    const {display} = router.query
+    const disValues = display && JSON.parse(display)
+    const values = Array.isArray(disValues) ?
+        disValues.map(item => sorted.find(element => element.id === item)) : sorted
+
+
+    const linkPillStyle = `py-1 hover:bg-red-50 hover:border-red-300 hover:text-red-600
+    focus:bg-red-50 focus:border-red-300 focus:text-red-600
+    transition-all duration-200
+    px-2 text-sm text-gray-700 md:text-base border border-gray-200 shadow-sm rounded-full inline-block mb-2 mr-2`
 
     return <>
         <Head>
@@ -35,13 +35,17 @@ const Resources = () => {
             <h1 className="text-5xl font-bold text-gray-900 font-display">Resources</h1>
             <section className="my-6">
                 <h2 className="font-display text-2xl font-semibold mb-4 text-gray-800">Categories</h2>
-                {sorted.map(resTree => <a className="py-1 hover:bg-red-50 hover:border-red-300 hover:text-red-600
-            focus:bg-red-50 focus:border-red-300 focus:text-red-600
-            transition-all duration-200
-             px-2 text-sm text-gray-700 md:text-base border border-gray-200 shadow-sm rounded-full inline-block mb-2 mr-2"
+                {values.map(resTree => <a className={linkPillStyle}
                                           href={`#${resTree.id}`}>{resTree.title}</a>)}
+                {Array.isArray(disValues) && <Link href="/resources">
+                    <a className={linkPillStyle}>See more resources</a>
+                </Link>}
+
+
+
+
             </section>
-            {sorted.map(resourceTree => (<section key={resourceTree.id} id={resourceTree.id} className="mt-8">
+            {values.map(resourceTree => (<section key={resourceTree.id} id={resourceTree.id} className="mt-8">
                     <h2 className="font-display text-2xl font-semibold text-gray-800">{resourceTree.title}</h2>
                     <ul className="divide-y divide-gray-300 mt-2">
                         {resourceTree.resources.map(resource => (
