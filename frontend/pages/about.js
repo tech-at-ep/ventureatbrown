@@ -75,7 +75,7 @@ const About = () => {
 
                 </div>
             </section>
-
+            <div className="font-display text-gray-400 my-3">Created with graphics by <a href="https://www.janicekhang.com/"><span className="text-blue-500">Janice Khang</span> '22</a></div>
         </div>
     </>
 
