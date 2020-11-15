@@ -4,28 +4,28 @@ import Navbar from "../components/Navbar";
 const About = () => {
 
     const team = [{
-        name: "Nathan Luu '24",
+        name: "Nathan Luu",
         role: "Frontend/Backend Developer",
         image: "https://images.unsplash.com/photo-1604599339387-51694a05fb91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
         linkedIn: "http://google.com",
         github: "https://github.com/nthnluu",
         website: "https://nthnluu.com"
     }, {
-        name: "Jasper Chen '24",
+        name: "Jasper Chen",
         role: "Frontend Designer/Developer",
         image: "https://images.unsplash.com/photo-1604599886859-7aa09b49f7dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80",
         linkedIn: "https://www.linkedin.com/in/jasper-chen-1b8b98197",
         github: "https://github.com/Jasch3n",
         website: "https://jasch3n.github.io/mySite"
     }, {
-        name: "Abby Powell '22",
+        name: "Abby Powell",
         role: "Frontend Developer",
         image: "https://images.unsplash.com/photo-1604550930068-e6723f4ab2fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80",
         linkedIn: "http://google.com",
         github: "https://github.com/nthnluu",
         website: "https://nthnluu.com"
     }, {
-        name: "Aaron Wang '23",
+        name: "Aaron Wang",
         role: "Project Manager",
         image: "https://ventureatbrown.com/placeholder_bear.svg",
         linkedIn: "https://linkedin.com/in/aaronjwang",
@@ -75,7 +75,7 @@ const About = () => {
 
                 </div>
             </section>
-            <div className="font-display text-gray-400 my-3">Created with graphics by <a href="https://www.janicekhang.com/"><span className="text-blue-500">Janice Khang</span> '22</a></div>
+            <div className="font-display text-gray-400 my-3">Graphics and illustrations by <a href="https://www.janicekhang.com/"><span className="text-blue-500">Janice Khang</span></a></div>
         </div>
     </>
 

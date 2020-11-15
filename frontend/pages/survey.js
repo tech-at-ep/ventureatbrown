@@ -52,7 +52,7 @@ const Survey = () => {
     }, [])
 
     return (
-        <div className="max-h-screen">
+        <div className="full-height">
             <Navbar isLanding/>
             <SwitchTransition>
                 <CSSTransition
@@ -60,7 +60,7 @@ const Survey = () => {
                     addEndListener={(node, done) => node.addEventListener("transitionend", done, false)}
                     classNames='fade'
                 >
-                    <div className={`h-screen flex ${displayMode === "question" ? "items-center" : "items-start"} px-4`}>
+                    <div className={`h-full flex ${displayMode === "question" ? "items-center" : "items-start"} px-4`}>
                         {displayMode === "question" ? <div className="w-full mx-auto max-w-7xl text-center">
                             <h1 className="text-2xl lg:text-4xl font-bold font-display">
                                 {item ? item.question : null}
