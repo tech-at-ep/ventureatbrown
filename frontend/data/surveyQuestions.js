@@ -9,6 +9,7 @@ export const surveyQuestions = {
     "1A": {
         id: 1,
         question: "What would you like to do?",
+        bearImage: "/bears/plain_bear.svg",
         choices: [
             {
                 content: "I want to learn more about entrepreneurship.",
@@ -32,6 +33,7 @@ export const surveyQuestions = {
     "2A": {
         id: 2,
         question: "Do you have an idea?",
+        bearImage: "/bears/experienced_pink.svg",
         derivesFrom: "1A",
         choices: [
             {
@@ -49,6 +51,7 @@ export const surveyQuestions = {
     "2B": {
         id: 3,
         question: "Are you looking to raise a round?",
+        bearImage: "/bears/experienced_green.svg",
         derivesFrom: "1A",
         choices: [
             {
@@ -66,6 +69,7 @@ export const surveyQuestions = {
     "3A": {
         id: 4,
         question: "Do you want to join a club?",
+        bearImage: "/bears/unsexperienced_red.svg",
         derivesFrom: "2A",
         choices: [
             {
@@ -83,6 +87,7 @@ export const surveyQuestions = {
     "3B": {
         id: 5,
         question: "Interested in networking?",
+        bearImage: "/bears/experienced_green.svg",
         derivesFrom: "2A",
         choices: [
             {
@@ -100,6 +105,7 @@ export const surveyQuestions = {
     "4A": {
         id: 6,
         question: "Do you want to join a VC?",
+        bearImage: "/bears/unexperienced_brown.svg",
         derivesFrom: "3A",
         choices: [
             {

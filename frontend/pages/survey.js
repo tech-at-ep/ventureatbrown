@@ -62,8 +62,9 @@ const Survey = () => {
                 >
                     <div className={`h-full flex ${displayMode === "question" ? "items-center" : "items-start"} px-4`}>
                         {displayMode === "question" ? <div className="w-full mx-auto max-w-7xl text-center">
+                            <img src={item && item.bearImage} className="rounded-lg mb-6 h-64 mx-auto"/>
                             <h1 className="text-2xl lg:text-4xl font-bold font-display">
-                                {item ? item.question : null}
+                                {item && item.question}
                             </h1>
                             <div className="lg:space-x-4 space-y-4 lg:space-y-0 mt-6">
                                 {item.choices.map(choice => <button
