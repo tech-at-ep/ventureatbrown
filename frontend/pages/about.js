@@ -1,40 +1,38 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 
+const team = [{
+    name: "Nathan Luu",
+    role: "Frontend/Backend Developer",
+    image: "https://images.unsplash.com/photo-1604599339387-51694a05fb91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
+    linkedIn: "https://www.linkedin.com/in/nathan-benavides-luu-18a51b68/",
+    github: "https://github.com/nthnluu",
+    website: "https://nthnluu.com"
+}, {
+    name: "Jasper Chen",
+    role: "Frontend Designer/Developer",
+    image: "https://images.unsplash.com/photo-1604599886859-7aa09b49f7dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80",
+    linkedIn: "https://www.linkedin.com/in/jasper-chen-1b8b98197",
+    github: "https://github.com/Jasch3n",
+    website: "https://jasch3n.github.io/mySite"
+}, {
+    name: "Abby Powell",
+    role: "Frontend Developer",
+    image: "https://images.unsplash.com/photo-1604550930068-e6723f4ab2fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80",
+    linkedIn: "http://google.com",
+    github: "https://github.com/nthnluu",
+    website: "https://nthnluu.com"
+}, {
+    name: "Aaron Wang",
+    role: "Project Manager",
+    image: "https://ventureatbrown.com/placeholder_bear.svg",
+    linkedIn: "https://linkedin.com/in/aaronjwang",
+    github: "https://github.com/aaronwangj",
+    website: "https://aaronjwang.com"
+}]
+
 const About = () => {
-
-    const team = [{
-        name: "Nathan Luu",
-        role: "Frontend/Backend Developer",
-        image: "https://images.unsplash.com/photo-1604599339387-51694a05fb91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
-        linkedIn: "http://google.com",
-        github: "https://github.com/nthnluu",
-        website: "https://nthnluu.com"
-    }, {
-        name: "Jasper Chen",
-        role: "Frontend Designer/Developer",
-        image: "https://images.unsplash.com/photo-1604599886859-7aa09b49f7dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80",
-        linkedIn: "https://www.linkedin.com/in/jasper-chen-1b8b98197",
-        github: "https://github.com/Jasch3n",
-        website: "https://jasch3n.github.io/mySite"
-    }, {
-        name: "Abby Powell",
-        role: "Frontend Developer",
-        image: "https://images.unsplash.com/photo-1604550930068-e6723f4ab2fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80",
-        linkedIn: "http://google.com",
-        github: "https://github.com/nthnluu",
-        website: "https://nthnluu.com"
-    }, {
-        name: "Aaron Wang",
-        role: "Project Manager",
-        image: "https://ventureatbrown.com/placeholder_bear.svg",
-        linkedIn: "https://linkedin.com/in/aaronjwang",
-        github: "https://github.com/aaronwangj",
-        website: "https://aaronjwang.com"
-    }]
-
     const buttonStyle = "text-gray-400 hover:text-gray-300 focus:text-gray-200 transition-all duration-200"
-
     return <>
         <Head>
             <title>About | Venture@Brown</title>
@@ -78,8 +76,6 @@ const About = () => {
             <div className="font-display text-gray-400 my-3">Graphics and illustrations by <a className="red-link" href="https://www.janicekhang.com/">Janice Khang</a></div>
         </div>
     </>
-
-
 }
 
 export default About
