@@ -11,7 +11,7 @@ const team = [{
 }, {
     name: "Jasper Chen",
     role: "Frontend Designer/Developer",
-    image: "https://images.unsplash.com/photo-1604599886859-7aa09b49f7dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80",
+    image: "https://ventureatbrown.com/bears/smiling_red_bear.svg",
     linkedIn: "https://www.linkedin.com/in/jasper-chen-1b8b98197",
     github: "https://github.com/Jasch3n",
     website: "https://jasch3n.github.io/mySite"
