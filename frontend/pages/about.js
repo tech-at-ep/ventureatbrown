@@ -75,7 +75,7 @@ const About = () => {
 
                 </div>
             </section>
-            <div className="font-display text-gray-400 my-3">Graphics and illustrations by <a href="https://www.janicekhang.com/"><span className="text-blue-500">Janice Khang</span></a></div>
+            <div className="font-display text-gray-400 my-3">Graphics and illustrations by <a className="red-link" href="https://www.janicekhang.com/">Janice Khang</a></div>
         </div>
     </>
 
