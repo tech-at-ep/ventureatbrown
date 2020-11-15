@@ -29,7 +29,7 @@ npm install
 yarn install
 ```
 
-Run the local develoment server and view the site at http://localhost:3000/
+Run the local development server and view the site at http://localhost:3000/
 ```
 npm dev
 # or
