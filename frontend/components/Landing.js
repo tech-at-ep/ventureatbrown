@@ -5,7 +5,7 @@ export default function () {
 
     return <div className="font-display max-w-screen-sm">
         <Navbar isLanding/>
-        <img src="/placeholder_bear.svg" className="rounded-lg mb-6"/>
+        <img src="/bears/smiling_red_bear.svg" className="rounded-lg mb-6 h-64 mx-auto"/>
         <div className="text-center">
             <h1 className="text-3xl sm:text-5xl font-bold text-gray-900">Venture<span className="font-sans text-gray-400 font-light">@</span>Brown</h1>
             <p className="text-xl text-gray-500">A guide to help Brown and RISD students navigate the entrepreneurial resources on College Hill.</p>
