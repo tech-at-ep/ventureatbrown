@@ -25,7 +25,7 @@ const team = [{
 }, {
     name: "Aaron Wang",
     role: "Project Manager",
-    image: "https://ventureatbrown.com/placeholder_bear.svg",
+    image: "https://ventureatbrown.com/bears/experienced_green.svg",
     linkedIn: "https://linkedin.com/in/aaronjwang",
     github: "https://github.com/aaronwangj",
     website: "https://aaronjwang.com"
