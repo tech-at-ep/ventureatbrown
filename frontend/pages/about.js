@@ -19,8 +19,8 @@ const team = [{
     name: "Abby Powell",
     role: "Frontend Developer",
     image: "https://images.unsplash.com/photo-1604550930068-e6723f4ab2fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80",
-    linkedIn: "http://google.com",
-    github: "https://github.com/nthnluu",
+    linkedIn: "https://www.linkedin.com/in/abigail-powell-75705b173",
+    github: "https://github.com/abigail-powell",
     website: "https://nthnluu.com"
 }, {
     name: "Aaron Wang",
