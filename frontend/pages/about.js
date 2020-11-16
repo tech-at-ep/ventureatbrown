@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 const team = [{
     name: "Nathan Luu",
     role: "Frontend/Backend Developer",
-    image: "https://images.unsplash.com/photo-1604599339387-51694a05fb91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80",
+    image: "/bears/nathan_bear.svg",
     linkedIn: "https://www.linkedin.com/in/nathan-benavides-luu-18a51b68/",
     github: "https://github.com/nthnluu",
     website: "https://nthnluu.com"
