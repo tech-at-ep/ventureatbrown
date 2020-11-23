@@ -5,7 +5,7 @@ const team = [{
     name: "Nathan Luu",
     role: "Frontend/Backend Developer",
     image: "/bears/nathan_bear.svg",
-    linkedIn: "https://www.linkedin.com/in/nathan-benavides-luu-18a51b68/",
+    linkedIn: "www.linkedin.com/in/nthnluu",
     github: "https://github.com/nthnluu",
     website: "https://nthnluu.com"
 }, {
