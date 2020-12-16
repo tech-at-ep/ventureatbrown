@@ -1,6 +1,6 @@
 <img src="https://firebasestorage.googleapis.com/v0/b/brown-ep.appspot.com/o/readme.png?alt=media&token=a3f9f6a8-8a66-4ac2-bafe-b2e6e098d6a3"/>
 
-# Venture @ Brown
+# [Venture @ Brown](https://ventureatbrown.com)
 
 An interactive guide to help Brown and RISD navigate the entrepreneurial resources on College Hill.
 
