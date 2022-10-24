@@ -47,7 +47,7 @@ export const resourceTrees = {
                 "description":"Use Hack@Brown as an opportunity to experiment with a new platform, API, or that idea that’s always been in the back of your mind!",
                 "image":"https://lh3.googleusercontent.com/proxy/eqTbo0mp805xpreVeIgZBfouW37YXMbPTY-tRrXWRBKBLfIWiODBIDThgaI6RCPRHC-j8RZ42f-Z_Lbeaerix6RRhVsIL4Ada_1NB-5lEaMXaGge014YhogqxPw",
                 "name":"Hack@Brown",
-                "url":"https://2020.hackatbrown.org/"
+                "url":"https://2022.hackatbrown.org/"
             },
             {
                 "image":"https://www.logolynx.com/images/logolynx/82/82b071a861026ee136cfe249798b2b34.png",
