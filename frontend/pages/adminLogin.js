@@ -21,7 +21,7 @@ class Login extends React.Component{
     }
     render(){
         return(
-            <div>
+            <div className="font-display">
                 <Navbar isLanding/>
 
                 <img src="/bears/smiling_red_bear.svg" className="rounded-lg mb-6 h-64 mx-auto" style={{top: '50px', position: 'relative'}}/>
