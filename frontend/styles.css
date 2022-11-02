@@ -54,5 +54,15 @@ button:focus {
     height: 100vh; /* Fallback for browsers that do not support Custom Properties */
     height: calc(var(--vh, 1vh) * 100);
 }
+.login-box {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 0 auto;
+}
+.login-input {
+    border: 1px solid gray;
+    margin-bottom: 5px;
+}
 /* purgecss end ignore */
 @tailwind  utilities;
